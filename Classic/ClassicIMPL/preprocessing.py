@@ -1,10 +1,9 @@
 import numpy as np
 
-# 均值方差归一化处理
+
 class StandardScaler:
 
     def __init__(self):
-        # sklearn标准, mean_ , scale_ 可以在外部访问
         self.mean_ = None
         self.scale_ = None
 
@@ -12,9 +11,7 @@ class StandardScaler:
         """根据训练数据集X获得数据的均值和方差"""
         assert X.ndim == 2, "The dimension of X must be 2"
 
-        # 均值
         self.mean_ = np.array([np.mean(X[:, i]) for i in range(X.shape[1])])
-        # 方差
         self.scale_ = np.array([np.std(X[:, i]) for i in range(X.shape[1])])
 
         return self
