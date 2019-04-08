@@ -1,7 +1,7 @@
 import numpy as np
 from math import sqrt
 from collections import Counter
-from metric import accuracy_score
+from ..metric import accuracy_score
 
 
 class KNNClassifier:

@@ -1,5 +1,5 @@
 import numpy as np
-from metric import r2_score
+from ..metric import r2_score
 
 
 # 一维
